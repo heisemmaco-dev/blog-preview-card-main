@@ -32,12 +32,9 @@
 
     background-color: var(--Yellow);
 
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
+    display: grid;
+    place-content: center;
 
     padding: 20px;
     gap: 20px;
@@ -84,7 +81,7 @@
     border: 1px solid var(--Black);
     padding: 27px;
 
-    box-shadow: 22px 26px 0px -7px var(--Black);
+    box-shadow: 18px 18px 0px -11px var(--Black);
   }
 
   main .illustration {
