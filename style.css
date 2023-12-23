@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Figtree', sans-serif;
+    font-size: 1em;
+
+    background-color: var(--Yellow);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    padding: 20px;
+    gap: 20px;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img {
+    display: block;
+    max-width: 100%;
+  }
+ 
+  /*
+    7. Avoid text overflows
+  */
+  p, h1 {
+    overflow-wrap: break-word;
+  }
+
+  :root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+  }
+
+  main {
+    max-width: 410px;
+    width: 100%;
+    background-color: var(--White);
+
+    color: var(--Black);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: center;
+
+    text-align: left;
+    gap: 25px;
+
+    border-radius: 22px;
+    border: 1px solid var(--Black);
+    padding: 27px;
+
+    box-shadow: 22px 26px 0px -7px var(--Black);
+  }
+
+  main .illustration {
+    border-radius: 15px;
+    width: 100%;
+  }
+
+  main article {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: center;
+
+    gap: 15px;
+  }
+  
+  main article .learning-text-container {
+    background-color: var(--Yellow);
+    width: 90px;
+    padding: 5px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+  }
+
+  main article h1 {
+    font-size: 1.15rem;
+  }
+
+  main article h1:hover {
+    color: var(--Yellow);
+  }
+
+  main article p {
+    color: var(--Grey);
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width:550px) {
+    main article h1 {
+      font-size: 1.5rem;
+    }
+
+    main article p {
+     font-size: 1rem;
+    }
+  }
+
+  main .profile-image-and-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  } 
+
+  main .profile-image-and-name img {
+    width: 40px;
+    height: 40px;
+  }
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
