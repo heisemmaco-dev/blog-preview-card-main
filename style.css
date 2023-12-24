@@ -83,7 +83,7 @@
     border: 1px solid var(--Black);
     padding: 27px;
 
-    box-shadow: 18px 18px 0px -11px var(--Black);
+    box-shadow: 15px 16px 0px -11px var(--Black);
   }
 
   main .illustration {
@@ -116,6 +116,7 @@
 
   main article h1 {
     font-size: 1.15rem;
+    cursor: pointer;
   }
 
   main article h1:hover {
